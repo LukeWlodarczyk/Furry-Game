@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: lightblue;
+}
+
+.score {
+  width: 100%;
+  text-align: center;
+}
+
+#board {
+  background: lime;
+  box-shadow: 0 0 30px 5px lime;
+  width: 640px;
+  height: 640px;
+  margin: 2em auto;
+}
+
+#board  > div {
+  border: 1px solid darkgreen;
+  float: left;
+  width: 64px;
+  height: 64px;
+}
+
+.furry {
+  background-image: url('../images/furry.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coin {
+  background-image: url('../images/coin.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.result {
+  display: none;
+  text-align: center;
+  padding: 10em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #aa1111;
+
+  .restartBtn {
+    background: #b10000;
+    padding: 1em 2em;
+    border: 1px solid black;
+    &:hover {
+      background: #aa1111;
+    }
+  }
+}
